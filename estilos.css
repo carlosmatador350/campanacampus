@@ -48,11 +48,11 @@ body{
     padding-bottom: 0.8%;
 }
 
-.alinearfloatderecha{
+#alinearfloatderechaencabezado{
     float: right;
 }
 
-.alinearfloatizquierda{
+#alinearfloatizquierdaencabezado{
     float: left;
 }
 
@@ -60,6 +60,11 @@ body{
     overflow: hidden;
     padding-top: 5px;
     padding-bottom: 7px;
+}
+
+#tamanoimglogotp{
+    width: 233px;
+    height: auto;
 }
 
 .espacioarribayabajodelogo{
@@ -107,53 +112,6 @@ body{
     padding-right: 6px;
 }
 
-@media screen and (max-width: 480px){
-    .alinearfloatizquierda{
-        float: none;
-        text-align: center;
-    }
-    
-    .alinearfloatderecha{
-        float: none;
-        text-align: center;
-    }
-    
-    .espacioarribadelinksrss{
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    
-    .tamanotextoencabezado{
-        font-size: 1em;
-    }
-} 
-
-
-@media screen and (max-width: 480px) and (orientation: landscape){
-    .alinearfloatizquierda{
-        float: none;
-        text-align: center;
-    }
-    
-    .alinearfloatderecha{
-        float: none;
-        text-align: center;
-    }
-    
-    .espacioarribadelinksrss{
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    
-    .tamanotextoencabezado{
-        font-size: 1em;
-    }
-}
-
-
-/* orientation: landscape */
-
-
 #fondosecc1{
     background-color: #000000;
     height: auto;
@@ -178,21 +136,6 @@ body{
     font-size: 3.8em;
     font-weight: 600;
     text-align: center;
-}
-
-@media screen and (max-width: 480px){
-    #espacioenmediodelaseccion1{
-        max-width: 100%;
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }   
-    
-    #tituloblanco{
-        color: white;
-        font-size: 2.2em;
-        font-weight: 600;
-        text-align: center;
-    }
 }
 
 #tamanoimgcertificado{
@@ -238,29 +181,6 @@ body{
     width: 100%;
 }
 
-@media screen and (max-width: 480px){
-    #textoprecioespecial{
-        font-size: 1.5em;
-        text-align: center;
-    }
-    
-    #precioresaltado{
-        font-size: 2.6em;
-        text-align: center;
-    }
-    
-    #precioanterior{
-        color: red;
-        font-size: 1.2em;
-        text-align: center;
-    }
-    
-    #espaciotituloyflecha{
-        height: 70px;
-        width: 100%;
-    }
-}
-
 #flechaabajo{
     max-width: 100%;
     height: auto;
@@ -303,14 +223,6 @@ body{
     color: gold;
 }
 
-@media screen and (max-width: 480px){
-    .estilodetituloblanco{
-        font-size: 1.8em;
-    }
-}
-
-
-
 #imgdefondosecc3{
     background-color: white;
 }
@@ -325,14 +237,6 @@ body{
     width: 100%;
     height: auto;
 }
-
-@media screen and (max-width: 480px){
-    #espacioenmediodelaseccion3{
-        padding-top: 160px;
-    }
-}
-
-
 
 #fondorojo{
     background-color: #DF0101;
@@ -378,9 +282,6 @@ body{
     border-radius: 13px;
 }
 
-
-
-
 .franjanegrapie{
     background-color: black;
     height: auto;
@@ -388,8 +289,12 @@ body{
     padding-bottom: 0.8%;
 }
 
-.acomodardisplayinterno{
-    display: inline-block;
+#alinearfloatderechapie{
+    float: right;
+}
+
+#alinearfloatizquierdapie{
+    float: left;
 }
 
 #cuadrodepie{
@@ -398,305 +303,192 @@ body{
     padding-bottom: 9px;
 }
 
+.espacioarribadelinks{
+    padding-top: 10px;
+}
+
+.acomodardisplayinterno{
+    display: inline-block;
+}
+
+.espacioentrelinks{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #espacionegro{
     display: none;
     visibility: hidden;
 }
 
-@media screen and (max-width: 480px){
-    #espacionegro{
-        display: block;
-        visibility: visible; 
-        background-color: black;
-        height: 60px;
+
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        
+        #tamanoimglogotp{
+            width: 233px;
+            height: auto;
+        }
+     
+        .tamanotextoencabezado{
+            font-size: 1em;
+        }
+     
+
+        #espacioenmediodelaseccion1{
+            max-width: 100%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+    
+        #tituloblanco{
+            color: white;
+            font-size: 3.4em;
+            font-weight: 600;
+            text-align: center;
+        }
+    
+        #textoprecioespecial{
+            color: gold;
+            font-size: 2em;
+            font-weight: 700;
+            line-height: 28px;
+        }
+
+        #precioresaltado{
+            color: white;
+            font-size: 4.5em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        #precioanterior{
+            font-size: 1.5em;
+            color: red;
+            text-align: center;
+        }
+
+        #preciotachadorojo{
+            text-decoration: line-through;
+        }
+
+        #espaciotituloyflecha{
+            height: 80px;
+            width: 100%;
+        }
+
+        .estilodetituloblanco{
+            font-size: 1.8em;
+        }
+
+        #espacioenmediodelaseccion3{
+            padding-top: 160px;
+        }
+
+        #alinearfloatderechapie{
+            float: none;
+            text-align: center;
+        }
+
+        #alinearfloatizquierdapie{
+            float: none;
+            text-align: center;
+        }
+    
+        #espacionegro{
+            display: block;
+            visibility: visible; 
+            background-color: black;
+            height: 62px;
+        }
     }
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.h2centrado{
-    text-align: center;
-}
-
-
-
-#iconosalcentro{
-    text-align: center;
-}
-
-#rectanguloredondeadonaranja{
-    background-color: orangered;
-    border-radius: 35px;
-    height: 200px;
-    width: 200px;
-}
-
-#circulo{
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-color: white;
-    position: relative;
-    top: 12%;
-    left: 12%;
-}
-
-#flechaderecha{
-    width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 100px solid orangered;
-	border-bottom: 50px solid transparent;
-    position: relative;
-    top: 17%;
-    left: 24%;
-}
-
-#espacioenmediodelossimbolos{
-    padding-left: 4%;
-    padding-right: 4%;
-}
-
-#rectanguloredondeadoverde{
-    background-color: green;
-    border-radius: 35px;
-    height: 200px;
-    width: 200px;
-}
-
-#portapapeles{
-    width: 119px;
-    height: 145px;
-    border-radius: 15px;
-    background-color: saddlebrown;
-    position: relative;
-    top: 14%;
-    left: 21%;
-}
-
-#hoja{
-    background-color: white;
-	height: 119px;
-    width: 98px;
-    position: relative;
-    top: 10%;
-    left:9%;
-}
-
-#lineadetexto{
-    width: 75px;
-	height: 10px;
-    background-color: grey;
-    border-radius: 4px;
-	position: relative;
-    top: 17%;
-    left: 12%;
-}
-
-#lineadetexto2{
-    width: 75px;
-	height: 10px;
-    background-color: grey;
-    border-radius: 4px;
-	position: relative;
-    top: 29%;
-    left: 12%;
-}
-
-#lineadetexto3{
-    width: 75px;
-	height: 10px;
-    background-color: grey;
-    border-radius: 4px;
-	position: relative;
-    top: 41%;
-    left: 12%;
-}
-
-#lineadetexto4{
-    width: 75px;
-	height: 10px;
-    background-color: grey;
-    border-radius: 4px;
-	position: relative;
-    top: 53%;
-    left: 12%;
-}
-
-.textodefiguraalcentro{
-    text-align: center;
-}
-
-#textodefiguranaranja{
-    color: orangered;
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-#textodefiguraverde{
-    color: green;
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-#seccion4{
-    background-color: #2f2e2e;
-    color: white;
-    height: auto;
-}
-
-#centradoverticalmente{
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-#seccion5{
-    height: auto;
-}
-
-#video{
-    max-width: 100%;
-    padding-top: 120px;
-    padding-bottom: 140px;
-}
-
-#videocentrado{
-    text-align: center;
-}
-
-#seccion6{
-    background-color: #2f2e2e;
-    color: white;
-    height: auto;
-}
-
-#informacioncentradaverticalmente{
-    padding-top: 65px;
-    padding-bottom: 120px;
-}
-
-#seccion7{
-    height: auto;
-}
-
-.rectangulodecadapaso{
-    height: auto;
-    border-radius: 50px;
-    padding-top: 1.3%;
-    padding-bottom: 1.3%;
-    text-align: center;
-    color: white;
-}
-
-#rectangulopaso1{
-    background-color: limegreen;
-}
-
-.textoalcentro{
-    text-align: center;
-}
-
-#tamanoimgpanelmaterialdeestudio{
-    height: auto;
-    width: 60%;
-}
-
-#tamanoimglistadecompetencias{
-    height: auto;
-    width: 35%;
-}
-
-#rectangulopaso2{
-    background-color: royalblue;
-}
-
-#tamanoimgbotones{
-    height: auto;
-    width: 60%;
-}
-
-.resaltadocolorrojo{
-    font-weight: 700;
-    color: red;
-}
-
-#rectangulopaso3{
-    background-color: darkorange;
-}
-
-#tamanoimgevaluadorindividual{
-    height: auto;
-    width: 50%;
-}
-
-#rectangulopaso4{
-    background-color: saddlebrown;
-}
-
-#tamanoimglistasbienymal{
-    height: auto;
-    width: 60%;
-}
-
-#tamanoimgnuevalista{
-    height: auto;
-    width: 30%;
-}
-
-#rectangulopaso5{
-    background-color: deepskyblue;
-}
-
-#tamanoimgtomaundescanso{
-    height: auto;
-    width: 90%;
-}
-
-#rectangulopaso6{
-    background-color: rebeccapurple;
-}
-
-#tamanoimgpresentaexamenesaleatorios{
-    height: auto;
-    width: 50%;
-}
-
-.textogranderesaltado{
-    text-align: center;
-    font-size: 1.3em;
-}
-
-#textoennegritas{
-    font-weight: 700;
-}
-
-#piedepagina{
-    border-collapse: collapse;
-    height: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 16px;
-}
-
-#textopieblanco{
-    color: white;
-}
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        
+        #tamanoimglogotp{
+            width: 233px;
+            height: auto;
+        }
+        
+        #alinearfloatizquierdaencabezado{
+            float: none;
+            text-align: center;
+        }
+        
+        #alinearfloatderechaencabezado{
+            float: none;
+            text-align: center;
+        }
+
+        .espacioarribadelinksrss{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .tamanotextoencabezado{
+            font-size: 1em;
+        }
+
+        #espacioenmediodelaseccion1{
+            max-width: 100%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }   
+
+        #tituloblanco{
+            color: white;
+            font-size: 2.2em;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        #textoprecioespecial{
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        #precioresaltado{
+            font-size: 2.6em;
+            text-align: center;
+        }
+
+        #precioanterior{
+            color: red;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        #espaciotituloyflecha{
+            height: 70px;
+            width: 100%;
+        }
+        
+        .estilodetituloblanco{
+            font-size: 1.8em;
+        }
+        
+        #espacioenmediodelaseccion3{
+            padding-top: 160px;
+        }
+        
+        #alinearfloatderechapie{
+            float: none;
+            text-align: center;
+        }
+
+        #alinearfloatizquierdapie{
+            float: none;
+            text-align: center;
+        }
+        
+        #espacionegro{
+            display: block;
+            visibility: visible; 
+            background-color: black;
+            height: 60px;
+        }        
+    }
