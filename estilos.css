@@ -335,13 +335,6 @@ body{
         .tamanotextoencabezado{
             font-size: 1em;
         }
-     
-
-        #espacioenmediodelaseccion1{
-            max-width: 100%;
-            padding-top: 40px;
-            padding-bottom: 20px;
-        }
     
         #tituloblanco{
             color: white;
@@ -437,7 +430,7 @@ body{
             max-width: 100%;
             padding-top: 40px;
             padding-bottom: 20px;
-        }   
+        }
 
         #tituloblanco{
             color: white;
