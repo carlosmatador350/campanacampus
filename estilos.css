@@ -129,6 +129,29 @@ body{
 } 
 
 
+@media screen and (max-width: 480px) and (orientation: landscape){
+    .alinearfloatizquierda{
+        float: none;
+        text-align: center;
+    }
+    
+    .alinearfloatderecha{
+        float: none;
+        text-align: center;
+    }
+    
+    .espacioarribadelinksrss{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .tamanotextoencabezado{
+        font-size: 1em;
+    }
+}
+
+
+/* orientation: landscape */
 
 
 #fondosecc1{
@@ -355,9 +378,8 @@ body{
     border-radius: 13px;
 }
 
-.acomodardisplayinterno{
-    display: inline-block;
-}
+
+
 
 .franjanegrapie{
     background-color: black;
@@ -366,15 +388,29 @@ body{
     padding-bottom: 0.8%;
 }
 
+.acomodardisplayinterno{
+    display: inline-block;
+}
+
 #cuadrodepie{
     overflow: hidden;
     padding-top: 7px;
     padding-bottom: 9px;
 }
 
+#espacionegro{
+    display: none;
+    visibility: hidden;
+}
 
-
-
+@media screen and (max-width: 480px){
+    #espacionegro{
+        display: block;
+        visibility: visible; 
+        background-color: black;
+        height: 60px;
+    }
+}
 
 
 
