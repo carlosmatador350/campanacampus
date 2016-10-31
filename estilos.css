@@ -48,6 +48,10 @@ body{
     padding-bottom: 0.8%;
 }
 
+.acomodardisplayinterno{
+    display: inline;
+}
+
 #alinearfloatderechaencabezado{
     float: right;
 }
@@ -138,18 +142,46 @@ body{
     text-align: center;
 }
 
-#tamanoimgcertificado{
-    height: auto;
-    max-width: 75%;
+.cuadrodecertificados{
+    overflow: hidden;
 }
 
 #espacioarribayabajodecertificado{
-    padding-top: 23px;
-    padding-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+
+#alinearcertificadoalaizquierda{
+    float: left;
+    width: 50%;
+}
+
+#tamanoimgcertificadonaranja{
+    height: auto;
+    max-width: 80%;
+}
+
+#alinearcertificadoaladerecha{
+    float: right;
+    width: 50%;
+}
+
+#tamanoimgcertificadoazul{
+    height: auto;
+    max-width: 80%;
 }
 
 .textoblanco{
     color: white;
+}
+
+.ajustaranchodetexto{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.justificartexto{
+    text-align: justify;
 }
 
 #textoprecioespecial{
@@ -167,7 +199,7 @@ body{
 }
 
 #precioanterior{
-    font-size: 1.5em;
+    font-size: 1.9em;
     color: red;
     text-align: center;
 }
@@ -195,10 +227,30 @@ body{
     border-right: 20px solid transparent;
     width: 0;
     transition: all .5s linear;
+    -webkit-animation: brincar 0.75s infinite alternate;
+    animation: brincar 0.5s infinite alternate;
 }
 
 #triangulo:hover{
     border-top: 30px solid #FFFF00;
+}
+
+@-webkit-keyframes brincar {
+        0% {
+        transform: translateY(4px);
+        }
+            100% {
+            transform: translateY(-4px);
+            }
+}
+
+@keyframes brincar {
+        0% {
+        transform: translateY(4px);
+        }
+            100% {
+            transform: translateY(-4px);
+            }
 }
 
 #fondoseccion2{
@@ -247,6 +299,11 @@ body{
 #espacioarribayabajodelaseccion4{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.estilodetituloblancosecc4{
+    font-size: 3.2em;
+    color: white;
 }
 
 .centrarinformacion{
@@ -307,10 +364,6 @@ body{
     padding-top: 10px;
 }
 
-.acomodardisplayinterno{
-    display: inline-block;
-}
-
 .espacioentrelinks{
     padding-left: 10px;
     padding-right: 10px;
@@ -320,7 +373,6 @@ body{
     display: none;
     visibility: hidden;
 }
-
 
 /*==========  Non-Mobile First Method  ==========*/
 
@@ -349,6 +401,51 @@ body{
             text-align: center;
         }
     
+.cuadrodecertificados{
+    overflow: hidden;
+}
+
+#espacioarribayabajodecertificado{
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+#alinearcertificadoalaizquierda{
+    float: none;
+    width: 100%;
+}
+
+#tamanoimgcertificadonaranja{
+    height: auto;
+    max-width: 70%;
+}
+
+#alinearcertificadoaladerecha{
+    padding-top: 70px;
+    float: none;
+    width: 100%;
+}
+
+#tamanoimgcertificadoazul{
+    height: auto;
+    max-width: 70%;
+}
+
+.textoblanco{
+    color: white;
+}
+
+.ajustaranchodetexto{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.justificartexto{
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 24px;
+} 
+        
         #textoprecioespecial{
             color: gold;
             font-size: 2em;
@@ -381,6 +478,11 @@ body{
             padding-top: 160px;
         }
 
+        .estilodetituloblancosecc4{
+            font-size: 2.2em;
+            color: white;
+        }
+        
         #alinearfloatderechapie{
             float: none;
             text-align: center;
@@ -440,6 +542,51 @@ body{
             text-align: center;
         }
         
+.cuadrodecertificados{
+    overflow: hidden;
+}
+
+#espacioarribayabajodecertificado{
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+
+#alinearcertificadoalaizquierda{
+    float: none;
+    width: 100%;
+}
+
+#tamanoimgcertificadonaranja{
+    height: auto;
+    max-width: 90%;
+}
+
+#alinearcertificadoaladerecha{
+    padding-top: 60px;
+    float: none;
+    width: 100%;
+}
+
+#tamanoimgcertificadoazul{
+    height: auto;
+    max-width: 90%;
+}
+
+.textoblanco{
+    color: white;
+}
+
+.ajustaranchodetexto{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.justificartexto{
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 24px;
+}       
+        
         #textoprecioespecial{
             font-size: 1.5em;
             text-align: center;
@@ -467,6 +614,11 @@ body{
         
         #espacioenmediodelaseccion3{
             padding-top: 160px;
+        }
+        
+        .estilodetituloblancosecc4{
+            font-size: 1.8em;
+            color: white;
         }
         
         #alinearfloatderechapie{
