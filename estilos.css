@@ -90,6 +90,49 @@ body{
     height: auto;
 }
 
+.shake-horizontal {
+  display: inline-block;
+  transform-origin: center center;
+}
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused;
+}
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-horizontal:hover,
+.shake-trigger:hover .shake-horizontal {
+  animation-play-state: running;
+}
+
+@keyframes shake-horizontal {
+  0%, 100% {
+    transform: translate(2px, 0) rotate(0);
+  }
+  
+ 25% {
+    transform: translate(0px, 0) rotate(0);
+  }
+    
+  50% {
+    transform: translate(-2px, 0) rotate(0);
+  }
+    
+  98% {
+    transform: translate(0px, 0) rotate(0);
+  }
+}
+
+.shake-horizontal:hover,
+.shake-trigger:hover .shake-horizontal, .shake-horizontal.shake-freeze, .shake-horizontal.shake-constant {
+  animation-name: shake-horizontal;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 #tamanoimgsobre{
     width: 22px;
     height: auto;
@@ -188,7 +231,6 @@ body{
     color: gold;
     font-size: 2.5em;
     font-weight: 700;
-    /* line-height: 28px; */
 }
 
 #precioresaltado{
@@ -276,18 +318,28 @@ body{
 }
 
 #imgdefondosecc3{
-    background-color: white;
+    background-image: url(Fondo%20escuela1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-#espacioenmediodelaseccion3{
-    max-width: 100%;
-    padding-top: 45px;
-    padding-bottom: 0px;
+#imagendecertificado{
+    background-attachment: fixed;
+    background-image: url(Certificacion%20naranja.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 620px auto;
+    padding-right: 38px;
 }
 
-#tamanoimgmanosconcertificado{
+#imagendemanos1{
+    background-image: url(Manos.png);
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: 85% auto;
+    height: 46em;
     width: 100%;
-    height: auto;
 }
 
 #fondorojo{
@@ -375,6 +427,95 @@ body{
 }
 
 /*==========  Non-Mobile First Method  ==========*/
+    
+    
+    /* Large Devices, Wide Screens */
+    /*@media only screen and (max-width : 1200px) {
+        #imgdefondosecc3{
+            background-image: url(Fondo%20escuela.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #imagendecertificado{
+            background-attachment: fixed;
+            background-image: url(Certificacion%20naranja.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 58% auto;
+            padding-right: 36px;
+        }
+
+        #imagendemanos1{
+            background-image: url(Manos.png);
+            background-position: center 100%;
+            background-repeat: no-repeat;
+            background-size: 86% auto;
+            height: 46em;
+            width: 100%;
+        }
+    }
+    */
+
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1096px) {
+        #imgdefondosecc3{
+            background-image: url(Fondo%20escuela.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #imagendecertificado{
+            background-attachment: fixed;
+            background-image: url(Certificacion%20naranja.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 56% auto;
+            padding-right: 32px;
+        }
+
+        #imagendemanos1{
+            background-image: url(Manos.png);
+            background-position: center 100%;
+            background-repeat: no-repeat;
+            background-size: 80% auto;
+            height: 40em;
+            width: 100%;
+        }
+    }
+
+
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        #imgdefondosecc3{
+            background-image: url(Fondo%20escuela.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #imagendecertificado{
+            background-attachment: fixed;
+            background-image: url(Certificacion%20naranja.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 64% auto;
+            padding-right: 26px;
+        }
+
+        #imagendemanos1{
+            background-image: url(Manos.png);
+            background-position: center 100%;
+            background-repeat: no-repeat;
+            background-size: 90% auto;
+            height: 36em;
+            width: 100%;
+        }
+    }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
@@ -401,50 +542,50 @@ body{
             text-align: center;
         }
     
-.cuadrodecertificados{
-    overflow: hidden;
-}
+        .cuadrodecertificados{
+            overflow: hidden;
+        }
 
-#espacioarribayabajodecertificado{
-    padding-top: 40px;
-    padding-bottom: 70px;
-}
+        #espacioarribayabajodecertificado{
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
 
-#alinearcertificadoalaizquierda{
-    float: none;
-    width: 100%;
-}
+        #alinearcertificadoalaizquierda{
+            float: none;
+            width: 100%;
+        }
 
-#tamanoimgcertificadonaranja{
-    height: auto;
-    max-width: 70%;
-}
+        #tamanoimgcertificadonaranja{
+            height: auto;
+            max-width: 70%;
+        }
 
-#alinearcertificadoaladerecha{
-    padding-top: 70px;
-    float: none;
-    width: 100%;
-}
+        #alinearcertificadoaladerecha{
+            padding-top: 70px;
+            float: none;
+            width: 100%;
+        }
 
-#tamanoimgcertificadoazul{
-    height: auto;
-    max-width: 70%;
-}
+        #tamanoimgcertificadoazul{
+            height: auto;
+            max-width: 70%;
+        }
 
-.textoblanco{
-    color: white;
-}
+        .textoblanco{
+            color: white;
+        }
 
-.ajustaranchodetexto{
-    padding-left: 80px;
-    padding-right: 80px;
-}
+        .ajustaranchodetexto{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
 
-.justificartexto{
-    text-align: justify;
-    font-size: 1.1em;
-    line-height: 24px;
-} 
+        .justificartexto{
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 24px;
+        } 
         
         #textoprecioespecial{
             color: gold;
@@ -473,11 +614,32 @@ body{
         .estilodetituloblanco{
             font-size: 1.8em;
         }
-
-        #espacioenmediodelaseccion3{
-            padding-top: 160px;
+        
+        #imgdefondosecc3{
+            background-image: url(Fondo%20escuela.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
 
+        #imagendecertificado{
+            background-attachment: fixed;
+            background-image: url(Certificacion%20naranja.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 64% auto;
+            padding-right: 26px;
+        }
+
+        #imagendemanos1{
+            background-image: url(Manos.png);
+            background-position: center 100%;
+            background-repeat: no-repeat;
+            background-size: 90% auto;
+            height: 32em;
+            width: 100%;
+        }      
+        
         .estilodetituloblancosecc4{
             font-size: 2.2em;
             color: white;
@@ -498,6 +660,35 @@ body{
             visibility: visible; 
             background-color: black;
             height: 62px;
+        }
+    }
+
+
+/* Super Extra Small Devices, Phones */
+    @media only screen and (max-width : 640px) {
+        #imgdefondosecc3{
+            background-image: url(Fondo%20escuela.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #imagendecertificado{
+            background-attachment: fixed;
+            background-image: url(Certificacion%20naranja.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 66% auto;
+            padding-right: 16px;
+        }
+
+        #imagendemanos1{
+            background-image: url(Manos.png);
+            background-position: center 100%;
+            background-repeat: no-repeat;
+            background-size: 90% auto;
+            height: 30em;
+            width: 100%;
         }
     }
 
@@ -542,50 +733,50 @@ body{
             text-align: center;
         }
         
-.cuadrodecertificados{
-    overflow: hidden;
-}
+        .cuadrodecertificados{
+            overflow: hidden;
+        }
 
-#espacioarribayabajodecertificado{
-    padding-top: 40px;
-    padding-bottom: 55px;
-}
+        #espacioarribayabajodecertificado{
+            padding-top: 40px;
+            padding-bottom: 55px;
+        }
 
-#alinearcertificadoalaizquierda{
-    float: none;
-    width: 100%;
-}
+        #alinearcertificadoalaizquierda{
+            float: none;
+            width: 100%;
+        }
 
-#tamanoimgcertificadonaranja{
-    height: auto;
-    max-width: 90%;
-}
+        #tamanoimgcertificadonaranja{
+            height: auto;
+            max-width: 90%;
+        }
 
-#alinearcertificadoaladerecha{
-    padding-top: 60px;
-    float: none;
-    width: 100%;
-}
+        #alinearcertificadoaladerecha{
+            padding-top: 60px;
+            float: none;
+            width: 100%;
+        }
 
-#tamanoimgcertificadoazul{
-    height: auto;
-    max-width: 90%;
-}
+        #tamanoimgcertificadoazul{
+            height: auto;
+            max-width: 90%;
+        }
 
-.textoblanco{
-    color: white;
-}
+        .textoblanco{
+            color: white;
+        }
 
-.ajustaranchodetexto{
-    padding-left: 12px;
-    padding-right: 12px;
-}
+        .ajustaranchodetexto{
+            padding-left: 12px;
+            padding-right: 12px;
+        }
 
-.justificartexto{
-    text-align: justify;
-    font-size: 1.1em;
-    line-height: 24px;
-}       
+        .justificartexto{
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 24px;
+        }       
         
         #textoprecioespecial{
             font-size: 1.5em;
@@ -616,6 +807,31 @@ body{
             padding-top: 160px;
         }
         
+        #imgdefondosecc3{
+            background-image: url(Fondo%20escuela.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #imagendecertificado{
+            background-attachment: fixed;
+            background-image: url(Certificacion%20naranja.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 64% auto;
+            padding-right: 18px;
+        }
+
+        #imagendemanos1{
+            background-image: url(Manos.png);
+            background-position: center 100%;
+            background-repeat: no-repeat;
+            background-size: 90% auto;
+            height: 24em;
+            width: 100%;
+        }           
+        
         .estilodetituloblancosecc4{
             font-size: 1.8em;
             color: white;
@@ -637,4 +853,33 @@ body{
             background-color: black;
             height: 60px;
         }        
+    }
+
+
+    /* Super Extra Small Devices, Phones */
+    @media only screen and (max-width : 320px) {
+        #imgdefondosecc3{
+            background-image: url(Fondo%20escuela.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #imagendecertificado{
+            background-attachment: fixed;
+            background-image: url(Certificacion%20naranja.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 72% auto;
+            padding-right: 8px;
+        }
+
+        #imagendemanos1{
+            background-image: url(Manos.png);
+            background-position: center 100%;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            height: 20em;
+            width: 100%;
+        }
     }
