@@ -318,7 +318,7 @@ body{
 }
 
 #imgdefondosecc3{
-    background-image: url(Fondo%20escuela.jpg);
+    background-image: url(Fondo%20de%20escuela.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -427,47 +427,10 @@ body{
 }
 
 /*==========  Non-Mobile First Method  ==========*/
-    
-    
-    /* Large Devices, Wide Screens */
-    /*@media only screen and (max-width : 1200px) {
-        #imgdefondosecc3{
-            background-image: url(Fondo%20escuela.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
-        #imagendecertificado{
-            background-attachment: fixed;
-            background-image: url(Certificacion%20naranja.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: 58% auto;
-            padding-right: 36px;
-        }
-
-        #imagendemanos1{
-            background-image: url(Manos.png);
-            background-position: center 100%;
-            background-repeat: no-repeat;
-            background-size: 86% auto;
-            height: 46em;
-            width: 100%;
-        }
-    }
-    */
 
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1096px) {
-        #imgdefondosecc3{
-            background-image: url(Fondo%20escuela.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
         #imagendecertificado{
             background-attachment: fixed;
             background-image: url(Certificacion%20naranja.png);
@@ -491,13 +454,6 @@ body{
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-        #imgdefondosecc3{
-            background-image: url(Fondo%20escuela.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
         #imagendecertificado{
             background-attachment: fixed;
             background-image: url(Certificacion%20naranja.png);
@@ -519,7 +475,6 @@ body{
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
-        
         #tamanoimglogotp{
             width: 233px;
             height: auto;
@@ -614,13 +569,6 @@ body{
         .estilodetituloblanco{
             font-size: 1.8em;
         }
-        
-        #imgdefondosecc3{
-            background-image: url(Fondo%20escuela.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
 
         #imagendecertificado{
             background-attachment: fixed;
@@ -666,13 +614,6 @@ body{
 
 /* Super Extra Small Devices, Phones */
     @media only screen and (max-width : 640px) {
-        #imgdefondosecc3{
-            background-image: url(Fondo%20escuela.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
         #imagendecertificado{
             background-attachment: fixed;
             background-image: url(Certificacion%20naranja.png);
@@ -695,7 +636,6 @@ body{
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-        
         #tamanoimglogotp{
             width: 233px;
             height: auto;
@@ -806,13 +746,6 @@ body{
         #espacioenmediodelaseccion3{
             padding-top: 160px;
         }
-        
-        #imgdefondosecc3{
-            background-image: url(Fondo%20escuela.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
 
         #imagendecertificado{
             background-attachment: fixed;
@@ -858,13 +791,6 @@ body{
 
     /* Super Extra Small Devices, Phones */
     @media only screen and (max-width : 320px) {
-        #imgdefondosecc3{
-            background-image: url(Fondo%20escuela.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
         #imagendecertificado{
             background-attachment: fixed;
             background-image: url(Certificacion%20naranja.png);
